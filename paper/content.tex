@@ -1,316 +1,250 @@
-% status: 0
+% status: TBD
 % chapter: TBD
 
-\title{Big Data for Edge Computing}
+\title{Orange}
 
 
-\author{Albert Zweistein}
-\orcid{1234-5678-9012}
-\affiliation{%
-  \institution{Institute for Plasma Physics in Documentation}
-  \streetaddress{P.O. Box 1234}
-  \city{Berlin} 
-  \state{Ohio} 
-  \postcode{123456-12345}
-}
-\email{trovato@corporation.com}
+\author{Moeen Arshad}
+ \affiliation{%
+  \institution{Indiana University Bloomington}
+  \city{Bloomington} \state{Indiana}  \postcode{47408}
+  }
+\email{marshad@iu.edu}
 
-\author{Gregor von Laszewski}
-\affiliation{%
-  \institution{Indiana University}
-  \streetaddress{Smith Research Center}
-  \city{Bloomington} 
-  \state{IN} 
-  \postcode{47408}
-  \country{USA}}
-\email{laszewski@gmail.com}
-
-
-% The default list of authors is too long for headers}
 \renewcommand{\shortauthors}{G. v. Laszewski}
 
-
 \begin{abstract}
-This paper provides a sample of a \LaTeX\ document which conforms,
-somewhat loosely, to the formatting guidelines for
-ACM SIG Proceedings.
+
+Orange is a data mining, visualization, and machine learning toolkit
+based on Python 3. Built at the University of Ljubljana, Slovenia by
+the Faculty of Computer and Information Science utilizing the
+Bioinformatics Library, this software was developed to allows domain
+experts and data scientists, alike, to take advantage of its capabilities
+in order to perform complex data mining and machine learning practices.
+Orange is targeted towards practitioners with varying degrees of technical
+background, including complete novices, and aims to simplify the
+product’s offerings through a visualization interface that describes
+the workflow in components, otherwise known as widgets.  Capabilities of
+this product include the ability to utilize random forests, Naïve Bayes,
+neural networks, and k-nearest neighbors for data mining and machine
+learning practices. Orange’s data source is typically in tabular format,
+with attributes in columns and instances in rows, and the software’s
+capabilities can be enhanced by developers who wish to create their
+own widgets. Add-ons are also readily available to extend Orange's
+functionality in specific domains such as bioinformatics, or text
+mining.
 \end{abstract}
 
-\keywords{hid-sp18-000, use up to 5 keywords}
+\keywords{hid-sp18-504, Orange, Machine Learning, Data Mining,
+          Visualization}
 
 
 \maketitle
 
-\section{Organization}
-
-The instructions are available at 
-
-\url{https://github.com/cloudmesh-community/hid-sample/blob/master/paper-instructions.md}
-
-It will bring you to a link allowing you to easily download the PDF
-version of the instructions. The PDF document is located at 
-
-\url{https://github.com/cloudmesh-community/hid-sample/raw/master/paper-instructions.pdf}
-
-
-The template is located at
-
-\url{https://github.com/cloudmesh-community/hid-sample/tree/master/paper}
-
-
-This sample has some advanced features that may not be offered by
-other \LaTeX\ frameworks. All of these features are accessible at this
-time throug a makefile. These advanced features are optional and
-introduce a number of automated tests for the document. Such tests are
-executed through a Makefile. Such makefiles can be executed on Linux
-or OSX. They are not available on sharelatex. As we have taught you
-how to set up a Linux system in class it is part of the leraning
-experience that you use that to verify the correctness of your
-paper. Alternatively you can set up a docker container and use
-that. It will be your responsibility to create such a container or set
-up the Linux environment with a \textit{full} version of \LaTeX\ and biber
-installed.
-
-The document is organized in a a repository, that needs to be
-replicated into your github repository. {\bf Please make sure that all
-  filenames and directory names but a README.md are all lower case and
-  have no underscore in it. Please make sure they do not contain a
-  space in the filename.} We repeat again: Be mindful about the
-capitalization of filenames and directory names. We only use lower
-case for any file in our directory and we never use spaces or non ASCI
-characters. 
-
-IN order for you to most easily compile the paper you will also need
-to check out the directory hid-sample that includes the formats. 
-
-Your recommended directories should look like
-
-\begin{verbatim}
-~/github/cloudmesh-community/hid-samle
-~/github/cloudmesh-community/hid-sp18-000
-\end{verbatim}
-
-where 000 the number part of your hid. The two hid directories are
-cloned from github. We taught you how to do this and it is a class
-goal that you know how to do it. 
-
-In your hid folder you will find, once it is set up the following
-directory and files:
-
-
-We have the following files that you will modify:
-
-\begin{verbatim}
-paper/content.tex
-paper/report.tex
-paper/report.bib
-images/README.md
-\end{verbatim}
-
-We separated the content from the report format into two different
-files, as we found that students in the past manipulated our format to
-circumvent our page limitation and artificially increased spacing and
-other unnecessary things that we would consider as cheating.
-If you
-
-Thus the only file you are allowed to modify is the content.tex file
-and the report.bib bibliography file and the images directory in which
-you place your images.
-
-Within the text, images and tables are {\bf must} be placed in floats
-as discussed in the handbook. You can place them with \verb|[htb]| at
-any place in the document. However, we will for the submission force
-the placement at the end of the document. You do not have to place
-them at the end. Please keep in mind that tables and figurs and
-programs that are also to be placed in figures do not count towards
-the paper length. Please also be reminded this is not a presentation
-and that lengthy enumerations will lead to point deductions. IN case
-of questions, consult with the TAs.
 
 \section{Introduction}
 
-Put here an introduction about your topic. 
-We just need one sample reference so the paper compiles in \LaTeX\ so we
-put it here~\cite{editor00}.
+Developed in a bioinformatics laboratory by a Computer and Information
+Science faculty~\cite{hid-sp18-504-predanalytics}, Orange was built for
+use by practitioners of all skill levels, ranging from developers to
+novices~\cite{hid-sp18-504-predanalytics}.
+With an interactive data visualization interface, Orange allows for
+a simple approach to perform complex data mining and machine learning
+practice through a component based workflow ui. This simplified approach
+to utilizing data mining and machine learning practices can be utilized
+not only as a tool to bridge the gap between domain experts and data
+scientists, but in addition to be leveraged in academic and
+research settings. Orange’s visual programming component is presented in
+the form of widgets in order to perform qualitative analysis through a
+visualized workflow map. This workflow map can have a number of different
+widgets included, each grouped into its own clas depending on a widget's
+function; which encourages the use of various different types of
+widgets mapped together in any given typical workflow. Orange can not only
+be utilized as a Python library, but developers can create their own custom
+widgets via Python scripting and add it to
+their workflow~\cite{hid-sp18-504-orange}.
+In addition to Orange being used for various data mining tasks, visualizations,
+and machine learning tasks, additional add-ons are available to extend Orange's
+functionalities, such as for domains involving ``biomedicine, bioinformatics,
+[and] genomic research''~\cite{hid-sp18-504-wiki-orange}.
 
-\section{Figures}
+\section{Design Overview}
 
-In Figure~\ref{f:fly} we show a fly. Please note that because we use
-just columwidth that the size of the figure will change to the
-columnwidth of the paper once we change the layout to final. Changing
-the layout to final should not be done by you. All figures will be
-listed at the end.  Please do not use phrases such as \textit{shown in
-  the figure below}. Instead use such as shown in Figure~\ref{f:fly}.
+This open source toolkit's latest version (3+) uses various python libraries
+for computation, while utilizing the Qt framework for the visualization
+end~\cite{hid-sp18-504-wiki-orange}.
+Orange was initially built atop C++ classes to cover
+modeling and preprocessing.
+Users interact with the Python layer which uses
+``popular Python libraries numpy for linear algebra,
+networkx for working with networks and matplotlib for
+basic visualization''~\cite{hid-sp18-504-journalorange}.
+Orange can integrate with various Python IDEs such as PyCharm or shells such as
+iPython, and offers cross-platform support on Windows, Linux, and
+MacOS X~\cite{hid-sp18-504-predanalytics}.
+The overall interface the user encounters with Orange can be broken down
+into two separate features; widgets, which cover Orange’s data mining and
+machine learning functionalities, and a canvas interface for users to design
+their workflow which links together widgets~\cite{hid-sp18-504-wiki-orange}.
+See\label{f:fig1} for an example of a workflow in Orange.
 
 \begin{figure}[!ht]
-  \centering\includegraphics[width=\columnwidth]{../../hid-sample/tex/images/fly.pdf}
-  \caption{Example caption}\label{f:fly}
+  \centering
+  \includegraphics[width=\columnwidth]{images/orangeworkflow-predanalytics.png}
+  \caption{Example
+  of Orange Workflow~\cite{hid-sp18-504-predanalytics} }
+\label{f:fig1}
 \end{figure}
 
-To avoid copying the example figure in each hid directory, we actually
-import it from the hid-sample directory. Lets assume you have a figure
-in the image directory called myfigure.pdf. You can than replace the
-line in the example with
+\section{Functionality}
+Some of Orange's available Python classes and methods
+include classes based on data models, preprocessing,
+classification, regression, clustering, distance,
+evaluation, and projection. The classification and
+regression classes offer the largest number of available methods,
+such as random forests,Naive Bayes, neural networks,
+and k-nearest neighbors~\cite{hid-sp18-504-orange}.
+These classes can either be used directly as a Python library, or used
+in Orange's widget sets. Users are able to script their own
+custom widgets in Python once meta data for the widget
+is defined, along with input/output specification, which
+are handled by class methods. These custom widgets
+can then be aded to the  Orange workflow, which define
+some of Orange's key capabilities~\cite{hid-sp18-504-wiki-orange}.
 
-\begin{verbatim}
-\centering\includegraphics[width=\columnwidth]{images/myfigure.pdf}
-\end{verbatim}
+\subsection{Widgets and Add-Ons}
+Widgets are the self-contained functional components that
+define a workflow's task. Using
+communication channels to pass outputs from one widget to another,
+data can be processed and transformed  using these self-contained
+functionalities to achieve the desired output. Users are capable of
+scripting their own functionalities in custom widgets once an input/output
+specification has been defined, along with constants for the class
+namespace. Users also have the ability to utilize the pre-existing
+widgets that are packaged with the software~\cite{hid-sp18-504-orange}.
 
-In case you use png than you must have a png that is at least 300dpi
-(find out what that means and how to do that) and use 
+Add-ons are utilized for targetted research, which extend Orange's
+functionality. Add-ons that are offered with
+Orange include Bioinformatics,
+Network, Spark, and Text, which can be simply added to Orange by
+navigating to the Options menu. These add-ons can be used in conjunction
+with Orange's existing widget set~\cite{hid-sp18-504-orange}.
 
-\begin{verbatim}
-\centering\includegraphics[width=\columnwidth]{images/myotehrfigure.png}
-\end{verbatim}
+The current widget catalog~\cite{hid-sp18-504-orange}, including some
+of the available add-ons, can be categorized as the following:
 
-When modifying the example, please do not check in the images from the
-examples into your images directory as you will not need them for your
-paper. Instead use images that you like to include. If you do not have
-any images, do not palce anything in the images folder. However most
-technologies could benefit for one image. Make sure you do not
-plagiarize the image. Find out from the hand book how to do that. Any
-plagiarism of images will result that we return the paper without
-review as you have not understood how plagiarism works.
+\begin{itemize}
 
-\section{Tables}
+   \item {\bf Data} (define data sources, perform
+   transformations, preprocess)
+   \item {\bf Visualize} (utilize various visualizations such as heat maps,
+   linear projections, and Pythagorean forests)
+   \item {\bf Model} (implement algorithms such as Naïve Bayes, neural
+   networks, linear regression, kNN)
+   \item {\bf Evaluate} (perform predictions and plot analysis)
+   \item {\bf Unsupervised} (implement algorithms such as k-Means, distance
+   transformation, correspondence analysis)
+   \item {\bf Data Fusion} (construct data fusion graphs and relation matrices)
+   \item {\bf Educational} (designed for educational purposes such as
+   interactive k-Means and polynomial classification)
+   \item {\bf Text} (offers various text based sources)
+   \item {\bf Network} (offers functionality for network analysis)
+   \item {\bf Bioinformatics} (various components related to bioinformatics,
+   such as gene info and KEGG Pathways)
+   \item {\bf Associate} (offers associate rules and frequent item sets)
 
-In case you need to create tables, you can do this with online tools
-(if you do not mind sharing your data) such as
-\url{https://www.tablesgenerator.com/} or other such tools (please
-google for them). They even allow you to manage tables as CSV.
+\end{itemize}
 
-or generate them by hand while using the provided template in Table
-\ref{t:mytable}. Note that
-the caption is before the tabular environment.
+\subsection{Data Sources}
+Using the File Widget, Orange is capable of importing native files,
+csv’s, text files, Excel spreadsheets, or Google Sheets.
+In short, the data that
+is consumed by Orange is typically in tabular format defined as samples
+by attributes, or rows by columns. Attributes can be defined as one of
+four category types: discrete, time, continuous, or string. Orange will
+make assumptions of attribute roles and types when importing data, but
+corrections can be made once again by utilizing the File Widget.
+For performance and compatibility (such as with scikit-learn),
+Orange wraps its datasets in numpy arrays, which allows details of
+the values and feature names to be stored~\cite{hid-sp18-504-orange}.
 
-\begin{table}[htb]
-\centering
-\caption{My caption}
-\label{t:mytabble}
-\begin{tabular}{lll}
-1 & 2 & 3 \\
-\toprule
-4 & 5 & 6 \\
-7 & 8 & 9
-\end{tabular}
-\end{table}
+\subsection{Classification}
+Supervised data mining, or classification, is a primary focal point of
+Orange's machine learning methods, which are dependent on class-labeled
+instances. These classifiers are comprised of two different object types,
+learner and classifiers~\cite{hid-sp18-504-orange}; where learners consume
+class-labeled data in order to return classifiers. Many different learners
+can be used on the same dataset, each with varying
+parameters to distinguish
+one learner from another and provide unique feedback, which are further
+utilized in ensembles, which are implemented as wrappers around various
+learners~\cite{hid-sp18-504-predanalytics}.
 
-\section{Quotes}
+To further enrich the classification methods that are offered, the following
+types of classification can be utilized in Orange~\cite{hid-sp18-504-orange}:
 
-Do not use double quotes \verb|"| but use \LaTeX\ ``quotes''. Quotes
-{\bf MUST} not be used to highlight works. Quotes are {\bf STRICTLY}
-used for quoting text from sources with citation following. If we find
-a quote that is not followed by a citation we will return the paper
-without review.
+\begin{itemize}
 
-\section{Labels}
+   \item {\bf Probabilistic Classification} (classifier that is called using
+   additional parameters in order to specify a classification based on output)
+   \item {\bf Cross Validation} (this method is used to validate the accuracy
+   of a classification by averaging the result across several runs of
+   classification from the dataset)
+   \item {\bf Classifiers} (scikit-learn is utilized to offer a number of
+   different classifiers in Orange which include logistic regression, kNN,
+   support vectore machines, classification trees, and random forests)
 
-Do not use actual numbers in the taxt after you write for example
-Figure 1 use the ref for the figure while using its label. In our
-example it is Figure~\ref{f:fly} and Table Figure~\ref{t:mytabble}.
-See the source for the example.
+\end{itemize}
 
-\section{Footnotes}
+\subsection{Regression}
+Regression, similiar to classification, is also dependent on class-labeled
+data, and is implemented using learners and regressors. In short, regression
+models, or regressors, predict a continous class value based on an input.
+Also similiar to classification, there are a number of available regressors
+in Orange (such as neural network, regression trees, linear regression, and
+polynomials), and cross validation is also a good way of checking a regression
+scoring method~\cite{hid-sp18-504-orange}.
 
-Footnotes must be avoided in papers. All URLs must be included as full
-references and citations and used with the \verb|\cite| command
-\footnote{do not use footnotes}. You {\bf must} not use urls in the
-text or paper.
+\section{Support}
+Orange is open source, and is released under
+GPL~\cite{hid-sp18-504-journalorange}.
+This toolkit is cross-platform, and supports Windows, Mac OS and
+Linux~\cite{hid-sp18-504-wiki-orange}.
+``As of March 2018 the stable version is 3.11 and runs with Python 3,
+while the legacy version 2.7 that runs with
+Python 2.7 is still available''~\cite{hid-sp18-504-wiki-orange}.
+Orange’s installer comes packaged with
+Anaconda~\cite{hid-sp18-504-analyticsvidhya}, and the GUI requires a
+PyQt installation~\cite{hid-sp18-504-orange}. Users may also install
+Orange directly from the Python Package Index
+repository~\cite{hid-sp18-504-journalorange}. Given t
+hat Orange is a free
+software released under the terms of the GNU General Public License,
+Orange does not offer any warranty on the product.
 
-\section{Plagiarism}
-
-The class includes a section about plagiarism which you must adhere
-to. Copying text without proper citation is considered cheating and we
-will assign the grade ``F'' for the paper if we find you do it. It is
-in your responsibility to make sure plagiarism does not occur. Please
-be aware that our checks are better than the once provided by turnitin
-or other online checkers. Excuses such as ``I did not have time'' or
-``I forgot'' can not apply as you have enough time to prepare the
-paper and must not forget. 
-
-\section{Check}
-
-make sure just as in previous assignments that you check your paper
-with chktex and lacheck. Fix the errors that you see. Some of the
-errors may be ok, but in general make sure you address all of them. If
-in doubt work with the TA. Simply use
-
-\begin{verbatim}
-make check
-\end{verbatim}
-
-We include in the handbook a list with common issues that we see when
-students submit papers. One particular important issue is not to use
-the underscore in bibtex labels. It is your responsibility to check
-the paper for the issues indicated.
-
-To check bibliographies simply use
-
-\begin{verbatim}
-pdflatex report
-bibtex report
-\end{verbatim}
-
-You will see the errors and warning son the screen address them
-
-TA's will in addition use a special test checking for additional
-format issues such as detecting if you used labels and refs for
-floats. You are welcome to also try this test, but we provide it
-without explanation as no explanation is needed since if you followed
-the instructions on floats there should be no issues. If you like to
-do that test, you can use  
-
-\begin{verbatim}
-make check-ta
-\end{verbatim}
-
-\section{Convenient Setup}
-
-If you do not have already a paper dir in your repository, here is a
-way to create one. Replace the hid-sp18-000 with your hid.
-
-\begin{verbatim}
-export HID=hid-sp18-000
-mkdir -p ~/github/cloudmesh-community
-cd ~/github/cloudmesh-community
-git clone https://github.com/cloudmesh-community/hid-sample.git
-git clone https://github.com/cloudmesh-community/$HID.git
-\end{verbatim}
-
-Next copy the paper example
-
-\begin{verbatim}
-cp -r hid-sample/paper $HID
-cd $HID
-git add paper
-git commit -m "add the paper directory" paper
-git push
-\end{verbatim}
-
-Make sure there is no \verb|/| behind the paper in the cp command or you mess up the
-copy process.
-
-
-\section{Creating the PDF}
-
-The PDF\ can be created simply with 
-
-\begin{verbatim}
-make clean
-\end{verbatim}
-
-
-
-{\bf UNDER NO CIRCUMSTANCES ARE YOU ALLOWED TO CHECK IN YOUR PDF OR
-  TEMPORARY LATEX FILES INTO GITHUB. GIT NEEDS TO STAY CLEAN AND ONLY
-  CONTAIN THE SOURCES.}
-
-We will deduct points if you do violate this.
 
 \section{Conclusion}
 
-Put here an conclusion. Conclusion and abstracts must not have any
-citations in the section.
+Using a canvas-based workflow diagram with functional widget components,
+Orange offers a solution which simplifies the process of data mining,
+machine learning, and visualization, and makes it accessible to users with
+novice technical backgrounds. This toolkit allows domain experts the ability
+to take advantage of powerful data-science rooted analytic methods; methods
+which traditionally were available to practitioners of
+data science with a strong
+technical background. Friendly towards experts as well, Orange’s
+Python-based
+functionalities offer users the ability to utilize a large number of existing
+Python libraries and integrate with various IDEs and shells. Users also have
+the flexibility to develop custom widgets using Python scripts with support
+for Python 2.X and Python 3.X. Orange also has a number of add-ons available,
+which include bioinformatics-based enhanced functionalities. This open
+source software has gathered an audience in research and academic
+settings due to its ease of use and simply entry into practicing
+data mining and machine learning techniques. In addition, Orange
+has accumulated several add-ons, which include bioinformatics
+and text mining; and is thus known in the bioinformatics
+domain space, as well. 
 
 
 \begin{acks}
@@ -321,5 +255,4 @@ citations in the section.
 \end{acks}
 
 \bibliographystyle{ACM-Reference-Format}
-\bibliography{report} 
-
+\bibliography{report}
